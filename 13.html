@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모아기획</title>
+
+<link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'SUIT', sans-serif;
+text-align:center;
+color:#1c1c1c;
+overflow:hidden;
+
+/* 완전 흰색이 아닌 고급 톤 */
+background: linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
+position:relative;
+}
+
+/* 은은한 라이트 효과 */
+body::before{
+content:'';
+position:absolute;
+top:-200px;
+left:-200px;
+width:600px;
+height:600px;
+background:radial-gradient(circle, rgba(0,0,0,0.04) 0%, transparent 70%);
+z-index:0;
+}
+
+body::after{
+content:'';
+position:absolute;
+bottom:-250px;
+right:-250px;
+width:700px;
+height:700px;
+background:radial-gradient(circle, rgba(0,0,0,0.03) 0%, transparent 70%);
+z-index:0;
+}
+
+.content{
+position:relative;
+z-index:1;
+}
+
+.logo{
+font-size:64px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.line{
+width:60px;
+height:3px;
+background:#1c1c1c;
+margin:28px auto;
+opacity:0.25;
+border-radius:10px;
+}
+
+.slogan{
+font-size:18px;
+color:#555;
+margin-bottom:55px;
+font-weight:400;
+}
+
+.button{
+display:inline-block;
+padding:16px 52px;
+border:1.5px solid #1c1c1c;
+font-size:15px;
+letter-spacing:1px;
+border-radius:30px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.button:hover{
+background:#1c1c1c;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="content">
+<div class="logo">모아기획</div>
+<div class="line"></div>
+<div class="slogan">믿고 맡길 수 있는 기획, 고객의 편안한 선택</div>
+
+<a href="https://heyhow12321.wixsite.com/moaplanning/home" style="text-decoration:none; color:#1c1c1c;">
+<div class="button">ENTER</div>
+</a>
+
+</div>
+
+</body>
+</html>
